@@ -1,0 +1,72 @@
+.card {
+  height: 44.5rem;
+  padding: 4.5rem;
+  position: relative;
+
+  &--orange {
+    background-color: var(--bg-orange);
+    // border-top-left-radius: 1rem;
+    // border-top-right-radius: 1rem;
+  }
+
+  &--dark-cyan-1 {
+    background-color: var(--bg-cyan-dark-1);
+  }
+
+  &--dark-cyan-2 {
+    background-color: var(--bg-cyan-dark-2);
+  }
+
+  &__icon {
+    width: 6rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 2.8rem;
+  }
+
+  &__text {
+    margin-bottom: 2.5rem;
+    max-width: 45rem;
+  }
+
+  &__btn {
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    height: 5rem;
+    width: 15rem;
+
+    &--orange {
+      color: var(--bg-orange);
+    }
+
+    &--dark-cyan-1 {
+      color: var(--bg-cyan-dark-1);
+    }
+
+    &--dark-cyan-2 {
+      color: var(--bg-cyan-dark-2);
+    }
+
+    @media only screen and (min-width: 920px) {
+      position: absolute;
+      bottom: 4.5rem;
+      left: 4.5rem;
+    }
+
+    &:hover {
+      @media (hover: hover) {
+        background-color: transparent;
+        color: var(--text-2);
+        border: 2px solid var(--text-2);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 920px) {
+    height: 50rem;
+    flex-wrap: wrap;
+  }
+}
