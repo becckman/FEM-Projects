@@ -1,0 +1,20 @@
+main {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+
+  &--top {
+    top: -70rem;
+    left: -80rem;
+  }
+
+  &--bottom {
+    bottom: -83rem;
+    right: -75rem;
+  }
+}
