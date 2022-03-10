@@ -1,0 +1,100 @@
+.card {
+  width: 100%;
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.15s;
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1.3625;
+    max-height: 40rem;
+    background-image: linear-gradient(hsla(277, 100%, 50%, 0.274)),
+      url(../images/image-header-mobile.jpg);
+    background-size: cover;
+
+    @media only screen and (min-width: 1150px) {
+      width: 49.5%;
+      order: 1;
+      background-image: linear-gradient(hsla(277, 100%, 33%, 0.473)),
+        url(../images/image-header-desktop.jpg);
+      height: 45rem;
+      max-height: 45rem;
+    }
+  }
+
+  &__info {
+    padding: 2.5rem;
+
+    @media only screen and(min-width: 1150px) {
+      width: 50.5%;
+      order: 0;
+      padding: 7.4rem 10rem 5rem 7.3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin-block: 2rem;
+
+    @media only screen and(min-width: 1150px) {
+      margin-top: 0;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__text {
+    margin-bottom: 3.5rem;
+  }
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media only screen and(min-width: 1150px) {
+      flex-direction: row;
+      gap: 5.5rem;
+    }
+  }
+  &__stat {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--heading-stat);
+
+    span {
+      display: block;
+    }
+
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__label {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+  }
+
+  @media only screen and(min-width: 1150px) {
+    max-width: 111rem;
+    width: 111rem;
+    height: 44rem;
+    text-align: left;
+
+    flex-direction: row;
+  }
+
+  &__info-text {
+    @media only screen and (min-width: 1150px) {
+    }
+  }
+}
