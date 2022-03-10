@@ -87,8 +87,8 @@ main {
   border-top-left-radius: 1rem;
 }
 .card__photo {
-  width: 9rem;
-  height: 9rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   border: 3px solid white;
   position: absolute;
