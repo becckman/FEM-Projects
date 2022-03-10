@@ -2,7 +2,7 @@
   --cyan-dark: hsl(185, 75%, 39%);
   --blue-dark-desat: hsl(229, 23%, 23%);
   --blue-dark-gray: hsl(227, 10%, 46%);
-  --gray-dark: hsl(0, 0%, 59%);
+  --gray-dark: hsla(0, 0%, 59%, 0.274);
 }
 
 *,
@@ -126,16 +126,17 @@ main {
           align-items: center;
   text-align: center;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   border-bottom-right-radius: 1rem;
   border-bottom-left-radius: 1rem;
+  border-top: 1px solid var(--gray-dark);
 }
 .card__stat {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--blue-dark-desat);
 }
 .card__label {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--blue-dark-gray);
   letter-spacing: 1.2px;
 }/*# sourceMappingURL=style.css.map */
