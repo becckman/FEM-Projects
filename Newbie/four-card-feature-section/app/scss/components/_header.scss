@@ -1,0 +1,22 @@
+.header {
+  text-align: center;
+  padding: 8.5rem 3rem 0rem 3rem;
+  max-width: 55rem;
+  margin: 0 auto;
+
+  @media only screen and (min-width: 1120px) {
+    max-width: 60rem;
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+}

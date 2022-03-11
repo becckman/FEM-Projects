@@ -1,0 +1,28 @@
+main {
+  padding: 8.5rem 3rem;
+  display: grid;
+  place-content: center;
+
+  @media only screen and (min-width: 1120px) {
+    padding-bottom: 0;
+  }
+}
+
+.container {
+  display: grid;
+
+  @media only screen and (min-width: 670px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem 3rem;
+  }
+
+  @media only screen and (min-width: 1120px) {
+    grid-template-columns: repeat(6, 15.75rem);
+    grid-template-rows: repeat(4, 11.18rem);
+    grid-template-areas:
+      ". . a a . ."
+      "b b a a c c"
+      "b b d d c c"
+      ". . d d . .";
+  }
+}

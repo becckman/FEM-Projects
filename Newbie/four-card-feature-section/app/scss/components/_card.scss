@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.5rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 30px hsla(212, 53%, 51%, 0.247);
+  height: 22.36rem;
+  transition: all 0.2s ease;
+
+  @media only screen and (min-width: 1120px) {
+    height: 25rem;
+
+    &--cyan {
+      grid-area: b;
+    }
+
+    &--red {
+      grid-area: a;
+    }
+
+    &--orange {
+      grid-area: d;
+    }
+
+    &--blue {
+      grid-area: c;
+    }
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 2.5rem;
+
+    @media only screen and (min-width: 1120px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--cyan {
+    border-top: 4px solid var(--cyan);
+  }
+
+  &--red {
+    border-top: 4px solid var(--red);
+  }
+
+  &--orange {
+    border-top: 4px solid var(--orange);
+  }
+
+  &--blue {
+    border-top: 4px solid var(--blue);
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    @media only screen and (min-width: 1120px) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    max-width: 90%;
+
+    @media only screen and (min-width: 1120px) {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__img {
+    align-self: flex-end;
+  }
+}

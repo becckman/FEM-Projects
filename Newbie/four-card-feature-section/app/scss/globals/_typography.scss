@@ -1,0 +1,27 @@
+h1 {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: var(--blue-dark);
+  line-height: 1.5;
+  transition: all 0.2s ease;
+
+  span {
+    font-weight: 600;
+  }
+
+  @media only screen and (min-width: 630px) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (min-width: 1120px) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--blue-dark);
+}
+
+p {
+}
