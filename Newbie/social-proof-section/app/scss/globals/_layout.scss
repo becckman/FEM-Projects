@@ -1,0 +1,15 @@
+main {
+  max-width: 111rem;
+  width: 100%;
+  padding-block: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+
+  @media only screen and(min-width:1200px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,16 @@
+body
+    main
+        section.heading
+            h1.heading__title
+            p.heading__subtitle
+        section.ratings
+            article.ratings__card .card * 3
+                img.ratings__stars
+                p.ratings__text
+        section.reviews
+            article.reviews__card .card * 3
+                div.reviews__buyer
+                    img.reviews__photo
+                    p.reviews__name
+                    p.reviews__verified
+                q.reviews__review
