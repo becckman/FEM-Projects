@@ -1,0 +1,17 @@
+.card {
+  width: 28.5rem;
+  margin: 6.5rem auto;
+
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  border-radius: 0.3rem;
+  overflow: hidden;
+
+  @media only screen and(min-width:660px) {
+    width: 63rem;
+    border-radius: 1rem;
+  }
+}
