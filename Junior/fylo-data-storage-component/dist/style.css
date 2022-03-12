@@ -1,0 +1,255 @@
+:root {
+  --gradient: hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+  --blue-pale: hsl(243, 100%, 93%);
+  --blue-gray: hsl(229, 7%, 55%);
+  --blue-700: hsl(228, 56%, 26%);
+  --blue-900: hsl(229, 57%, 11%);
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  background-image: url(../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2.5rem;
+}
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: var(--blue-900);
+    background-image: url(../images/bg-desktop.png);
+    background-size: 100% 50%;
+    background-position: bottom;
+  }
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+@media only screen and (min-width: 900px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.card {
+  background-color: var(--blue-700);
+  padding: 3rem 3rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+  min-width: 30rem;
+  position: relative;
+}
+@media only screen and (min-width: 900px) {
+  .card {
+    width: 50rem;
+  }
+}
+.card--rounded-right {
+  padding: 3.5rem;
+  border-top-right-radius: 9rem;
+  gap: 3rem;
+}
+@media only screen and (min-width: 900px) {
+  .card--rounded-right {
+    width: 30rem;
+  }
+}
+.card__logo {
+  width: 12rem;
+}
+.card__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+.card__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1rem;
+  background-color: var(--blue-900);
+  cursor: pointer;
+}
+.card__icon--document {
+  width: 1.8rem;
+}
+.card__icon--folder {
+  width: 2.2rem;
+}
+.card__icon--upload {
+  width: 2.5rem;
+}
+.card__info-text {
+  text-align: center;
+  color: var(--blue-pale);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.card__info-text span {
+  font-weight: 700;
+}
+.card__storage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+.card__progress {
+  width: 100%;
+  height: 1.8rem;
+  background-color: rgba(12, 18, 44, 0.4);
+  border-radius: 100vh;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+.card__progress::before {
+  content: "";
+  position: absolute;
+  width: 81.5%;
+  height: 1.2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradient)));
+  background-image: linear-gradient(to right, var(--gradient));
+  top: 0.3rem;
+  left: 0.3rem;
+  border-radius: 100vh;
+}
+.card__progress::after {
+  content: "";
+  position: absolute;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: white;
+  left: calc(81.5% - 0.9rem);
+  border-radius: 50%;
+  top: 0.42rem;
+}
+.card__min-storage {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue-pale);
+}
+.card__max-storage {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue-pale);
+}
+.card__storage-left {
+  width: 70%;
+  height: 6rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -6rem;
+  padding: 3.5rem 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: white;
+}
+@media only screen and (min-width: 900px) {
+  .card__storage-left {
+    position: absolute;
+    width: 14rem;
+    padding: 1.5rem 0;
+    top: -4rem;
+    right: 4rem;
+  }
+  .card__storage-left::before {
+    content: "";
+    position: absolute;
+    width: 2.3rem;
+    height: 3rem;
+    bottom: -2rem;
+    right: 0;
+    background: white;
+    -webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
+            clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+}
+.card__storage-left-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.card__storage-left-text span {
+  font-size: 1.1rem;
+  letter-spacing: 0.6px;
+  color: var(--blue-gray);
+  display: block;
+}
+@media only screen and (min-width: 900px) {
+  .card__storage-left-text span {
+    font-size: 0.9rem;
+  }
+}/*# sourceMappingURL=style.css.map */
