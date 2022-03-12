@@ -40,6 +40,11 @@
     padding: 1rem;
     background-color: var(--blue-900);
     cursor: pointer;
+    transition: all 0.15s ease-in-out;
+
+    &:hover {
+      background-color: hsla(229, 57%, 11%, 0.623);
+    }
   }
   &__icon {
     &--document {

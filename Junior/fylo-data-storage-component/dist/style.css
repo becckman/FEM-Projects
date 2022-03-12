@@ -119,6 +119,11 @@ main {
   padding: 1rem;
   background-color: var(--blue-900);
   cursor: pointer;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.card__option:hover {
+  background-color: rgba(12, 18, 44, 0.623);
 }
 .card__icon--document {
   width: 1.8rem;
