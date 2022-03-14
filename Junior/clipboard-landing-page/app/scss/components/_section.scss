@@ -1,0 +1,125 @@
+.section {
+  padding: 6.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &:first-child {
+    padding-top: 4rem;
+  }
+
+  &__heading {
+    max-width: 50rem;
+
+    @media only screen and (min-width: 1000px) {
+      max-width: 75rem;
+    }
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__subtitle {
+    @media only screen and (min-width: 1000px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__content {
+    @media only screen and (min-width: 1000px) {
+      margin-block: 9rem;
+      text-align: left;
+      gap: 10rem;
+
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__img {
+    width: 100%;
+    max-width: 35rem;
+    margin-block: 5.5rem;
+
+    @media only screen and (min-width: 1000px) {
+      max-width: 100%;
+      margin: 0;
+      flex: 0 0 55%;
+      margin-left: -6.5rem;
+    }
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+
+    @media only screen and (min-width: 1000px) {
+      flex: 0 0 25%;
+      margin-top: -3rem;
+    }
+
+    &--horizontal {
+      margin-top: 8rem;
+
+      @media only screen and (min-width: 1000px) {
+        flex-direction: row;
+
+        & > * {
+          flex: 1;
+        }
+      }
+    }
+  }
+  &__list-item {
+    h3 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      @media only screen and (min-width: 1000px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    img {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.section-access {
+  img {
+    margin-top: 10rem;
+  }
+}
+
+.section-workflow {
+  @media only screen and(min-width: 1000px) {
+    max-width: 111rem;
+  }
+}
+
+.section-sponsors {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 5rem;
+
+  img {
+    transform: scale(0.95);
+  }
+
+  @media only screen and(min-width: 1000px) {
+    max-width: 111rem;
+    flex-direction: row;
+    gap: 6rem;
+
+    img {
+      transform: scale(1);
+    }
+  }
+  @media only screen and (min-width: 1100px) {
+    gap: 8rem;
+  }
+}

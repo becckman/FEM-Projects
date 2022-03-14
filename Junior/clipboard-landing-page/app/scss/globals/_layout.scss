@@ -1,0 +1,24 @@
+.bg {
+  width: 100%;
+  aspect-ratio: 1.0330578512396694215;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  @media only screen and (min-width: 700px) {
+    background-image: url(../images/bg-header-desktop.png);
+    aspect-ratio: 3.9641873278;
+  }
+}
+
+main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  padding: 12.3rem 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  text-align: center;
+
+  @media only screen and(min-width:700px) {
+    padding-block: 13rem;
+  }
+
+  &__logo {
+    margin-bottom: 1rem;
+  }
+  &__heading {
+    max-width: 50rem;
+
+    @media only screen and (min-width: 700px) {
+      max-width: 75rem;
+    }
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+}

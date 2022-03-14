@@ -1,0 +1,57 @@
+div.bg (pos: absolute) 
+
+header.header
+    img.header__logo
+    div.header__heading
+        h1.header__title
+        p.header__subtitle
+    div.header__buttons.buttons
+        button.header__button.button.button--green
+        button.header__button.button.button--blue
+
+main
+    section.section-tracking.section
+        div.section__heading
+            h2.section__title
+            p.section__subtitle
+        img.section__img
+        ul.section__list.section__list--vertical
+            div.section__list-item * 3
+                h3
+                p
+
+    section.section-access.section
+        div.section__heading
+            h2.section__title
+            p.section__subtitle
+        img.section__img
+
+    section.section-workflow.section
+        div.section__heading
+            h2.section__title
+            p.section__subtitle
+        ul.section__list.section__list--horizontal
+            div.section__list-item * 3
+                img
+                h3
+                p
+
+    section.section-sponsors.section
+        img * 5
+
+    section.section-downloads.section
+        div.section__heading
+            h2.section__title
+            p.section__subtitle
+        div.section__buttons.buttons
+            button.section.button.button--green
+            button.section__button.button.button--blue
+
+footer.footer
+    img.footer__icon
+    nav.footer__nav
+        ul.footer__list
+            li.footer_list-item * 5
+        ul.footer-list--socials
+            li.footer_list-item * 3
+
